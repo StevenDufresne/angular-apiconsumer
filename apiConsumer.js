@@ -5,7 +5,7 @@ angular.module('XXXX').factory('apiConsumer', [ '$http', '$q',
 		var obj = {};
 
 		function _requestInfo(url) {
-			 var deferred = $q.defer();
+			var deferred = $q.defer();
 
 			$http.get(url)
 				.success(function (data) {
@@ -20,7 +20,7 @@ angular.module('XXXX').factory('apiConsumer', [ '$http', '$q',
 
 		obj.apiName = {
 			getInfo: function (item) {
-				var url = '/api/url'
+				var url = '/api/url';
 
 				return _requestInfo(url);			
 			}
